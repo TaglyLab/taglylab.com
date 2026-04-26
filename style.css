@@ -1,0 +1,115 @@
+/*
+  ============================================================
+  TAGLYLAB — BRAND IDENTITY GUIDE
+  ============================================================
+
+  ── PALETTE ─────────────────────────────────────────────────
+  Primary Dark     #0f172a  slate-900   Autorità, Fiducia
+  Surface Dark     #020617  slate-950   Footer, profondità
+  Accent Primary   #6366f1  indigo-500  Azione, tecnologia
+  Accent End       #8b5cf6  violet-500  Creatività, dinamismo
+  Background Light #f8fafc  slate-50    Sezioni content chiare
+  Text Strong      #1e293b  slate-800   Titoli, alta leggibilità
+  Text Muted       #64748b  slate-500   Body copy di supporto
+  Confirm/Growth   #10b981  emerald-500 Spunte, CTA secondarie
+  Warning/Badge    #f59e0b  amber-400   Piano evidenziato
+  Border           #e2e8f0  slate-200   Divisori, card border
+
+  ── TIPOGRAFIA ──────────────────────────────────────────────
+  Famiglia : Inter (Google Fonts) — sans-serif moderna
+  H1       : font-black 900 | 4xl–6xl  | leading-tight
+  H2       : font-bold  700 | 3xl–4xl  | tracking-normal
+  Body     : font-normal   | base–lg  | leading-relaxed
+  Badge    : font-semibold | xs       | uppercase | tracking-wider
+
+  ── TONE OF VOICE ───────────────────────────────────────────
+  ✓  Diretto — vai al punto, zero gergo tecnico
+  ✓  Rassicurante — prezzi fissi, tempi certi, nessuna sorpresa
+  ✓  Partner — "costruiamo insieme", non "forniamo un servizio"
+  ✓  Ambiziosi ma umani — grandi risultati, linguaggio semplice
+  ✓  Keywords: velocità · crescita locale · semplicità · risultati
+  ✗  Evita: tecnicismi, frasi passive, superlativo vuoto
+  ============================================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Hero ── */
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(99, 102, 241, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 55% 40% at 85% 85%,  rgba(139, 92, 246, 0.18) 0%, transparent 55%);
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* ── Text gradient headline accent ── */
+.text-gradient {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Hero image float ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+.hero-image-float {
+  animation: float 5s ease-in-out infinite;
+  filter: drop-shadow(0 30px 60px rgba(99, 102, 241, 0.3));
+}
+
+/* ── Cards ── */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.1);
+}
+
+.step-card { transition: transform 0.3s ease; }
+.step-card:hover { transform: translateY(-4px); }
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: #0f172a; }
+::-webkit-scrollbar-thumb  { background: #4338ca; border-radius: 3px; }
+
+/* ── Autofill dark override ── */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px rgba(15, 23, 42, 0.95) inset !important;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff;
+}
+
+/* ── Animate on enter ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-in { animation: fadeInUp 0.6s ease forwards; }
+
+/* ── Pricing featured card: no zoom on mobile ── */
+@media (max-width: 767px) {
+  .pricing-featured { transform: scale(1) !important; }
+}

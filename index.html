@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaglyLab — Siti web veloci per attività locali. Pronti in pochi giorni, ottimizzati per farti trovare dai clienti della tua zona.">
+  <title>TaglyLab — Siti Web per Attività Locali</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-slate-800">
+
+  <!-- ════════════════════════════════════════
+       NAV
+  ════════════════════════════════════════ -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+
+      <a href="#" class="flex items-center gap-2.5 flex-shrink-0">
+        <img src="img/logo.png" alt="TaglyLab logo" class="h-8 w-auto" onerror="this.style.display='none'">
+        <span class="text-white font-black text-xl tracking-tight">Tagly<span class="text-indigo-400">Lab</span></span>
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#come-funziona" class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Come Funziona</a>
+        <a href="#servizi"       class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Servizi</a>
+        <a href="#prezzi"        class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Prezzi</a>
+        <a href="#contatti"      class="text-slate-400 hover:text-white text-sm font-medium transition-colors">Contatti</a>
+      </div>
+
+      <a href="#contatti" class="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-lg transition-colors">
+        Richiedi Preventivo
+        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+
+      <button id="mobile-menu-btn" aria-label="Apri menu" class="md:hidden text-slate-400 hover:text-white p-1 transition-colors">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 px-4 pb-4 pt-2">
+      <a href="#come-funziona" class="block py-2.5 text-slate-400 hover:text-white text-sm font-medium transition-colors">Come Funziona</a>
+      <a href="#servizi"       class="block py-2.5 text-slate-400 hover:text-white text-sm font-medium transition-colors">Servizi</a>
+      <a href="#prezzi"        class="block py-2.5 text-slate-400 hover:text-white text-sm font-medium transition-colors">Prezzi</a>
+      <a href="#contatti"      class="block py-2.5 text-slate-400 hover:text-white text-sm font-medium transition-colors">Contatti</a>
+      <a href="#contatti" class="block mt-3 px-4 py-2.5 bg-indigo-600 text-white text-sm font-semibold rounded-lg text-center">Richiedi Preventivo</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ════════════════════════════════════════
+         1. HERO
+    ════════════════════════════════════════ -->
+    <section id="hero" class="relative min-h-screen flex items-center bg-slate-900 overflow-hidden pt-16">
+      <div class="absolute inset-0 hero-gradient pointer-events-none"></div>
+      <div class="absolute inset-0 hero-grid pointer-events-none"></div>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 grid lg:grid-cols-2 gap-16 items-center w-full">
+
+        <div>
+          <div class="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-7 uppercase tracking-widest">
+            <span class="w-1.5 h-1.5 bg-indigo-400 rounded-full animate-pulse"></span>
+            Web Agency · Attività Locali
+          </div>
+
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
+            Il Sito Web che<br>
+            <span class="text-gradient">Porta Clienti</span><br>
+            da Te
+          </h1>
+
+          <p class="text-slate-400 text-lg leading-relaxed mb-9 max-w-lg">
+            Siti web veloci, pronti in pochi giorni e ottimizzati per farti trovare dai clienti della tua zona.
+            Niente tecnicismi — solo risultati concreti.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contatti" class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5">
+              Richiedi un Preventivo
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="#come-funziona" class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold rounded-xl transition-all">
+              Come Funziona
+            </a>
+          </div>
+
+          <div class="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-500">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Consegna in 72 ore
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              SEO locale incluso
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Prezzo fisso garantito
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero mockup (right column) -->
+        <div class="hidden lg:flex justify-center items-center">
+          <div class="relative w-full max-w-md">
+            <img src="img/hero-mockup.png" alt="Anteprima sito TaglyLab" class="w-full rounded-2xl hero-image-float">
+
+            <div class="absolute -bottom-6 -left-8 bg-slate-800 border border-slate-700 rounded-2xl p-4 shadow-2xl">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-emerald-500/10 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                </div>
+                <div>
+                  <p class="text-white text-sm font-bold">+47% clienti online</p>
+                  <p class="text-slate-500 text-xs">media clienti TaglyLab</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute -top-5 -right-6 bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 shadow-2xl">
+              <div class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <p class="text-white text-sm font-semibold">Online in 72h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         2. COME FUNZIONA
+    ════════════════════════════════════════ -->
+    <section id="come-funziona" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16">
+          <span class="inline-block bg-indigo-50 text-indigo-600 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">Come Funziona</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Dal Preventivo al Lancio in 3 Passi</h2>
+          <p class="text-slate-500 text-lg max-w-xl mx-auto">Nessuna complessità, nessuna sorpresa. Un percorso chiaro verso il tuo nuovo sito.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+
+          <div class="step-card group text-center px-4">
+            <div class="relative inline-flex mb-7">
+              <div class="w-20 h-20 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-xl shadow-indigo-500/30 group-hover:shadow-indigo-500/50 transition-shadow">
+                <svg class="w-9 h-9 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </div>
+              <span class="absolute -top-2 -right-2 w-7 h-7 bg-slate-900 text-white text-xs font-black rounded-full flex items-center justify-center border-2 border-white">01</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Raccogliamo le Info</h3>
+            <p class="text-slate-500 leading-relaxed">Una breve chiamata. Ci parli della tua attività, dei tuoi clienti e di cosa vuoi comunicare. Basta così.</p>
+          </div>
+
+          <div class="step-card group text-center px-4">
+            <div class="relative inline-flex mb-7">
+              <div class="w-20 h-20 bg-violet-600 rounded-2xl flex items-center justify-center shadow-xl shadow-violet-500/30 group-hover:shadow-violet-500/50 transition-shadow">
+                <svg class="w-9 h-9 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </div>
+              <span class="absolute -top-2 -right-2 w-7 h-7 bg-slate-900 text-white text-xs font-black rounded-full flex items-center justify-center border-2 border-white">02</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Costruiamo Veloce</h3>
+            <p class="text-slate-500 leading-relaxed">Il nostro team sviluppa il tuo sito in pochi giorni. Design professionale, mobile-first e ottimizzato per Google.</p>
+          </div>
+
+          <div class="step-card group text-center px-4">
+            <div class="relative inline-flex mb-7">
+              <div class="w-20 h-20 bg-emerald-600 rounded-2xl flex items-center justify-center shadow-xl shadow-emerald-500/30 group-hover:shadow-emerald-500/50 transition-shadow">
+                <svg class="w-9 h-9 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                </svg>
+              </div>
+              <span class="absolute -top-2 -right-2 w-7 h-7 bg-slate-900 text-white text-xs font-black rounded-full flex items-center justify-center border-2 border-white">03</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Vai Online</h3>
+            <p class="text-slate-500 leading-relaxed">Pubblichiamo il sito. I tuoi nuovi clienti ti trovano su Google. Tu ti concentri sul tuo lavoro.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         3. SERVIZI / PORTFOLIO
+    ════════════════════════════════════════ -->
+    <section id="servizi" class="py-24 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16">
+          <span class="inline-block bg-indigo-50 text-indigo-600 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">Servizi</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Un Sito su Misura per la Tua Attività</h2>
+          <p class="text-slate-500 text-lg max-w-2xl mx-auto">Ogni settore ha esigenze diverse. Realizziamo siti che parlano direttamente ai clienti giusti.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+          <article class="bg-white rounded-2xl overflow-hidden border border-slate-100 card-hover group shadow-sm">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Sito web per pizzeria e ristorante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+              <span class="absolute bottom-4 left-4 bg-orange-500 text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-lg">Ristorazione</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Pizzerie &amp; Ristoranti</h3>
+              <p class="text-slate-500 text-sm leading-relaxed mb-5">Menu digitale, galleria foto, modulo prenotazione e Google Maps integrata. I clienti prenotano, tu cucini.</p>
+              <ul class="space-y-2 mb-7">
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Menu interattivo e aggiornabile</li>
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Prenotazioni online</li>
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Google My Business ottimizzato</li>
+              </ul>
+              <a href="#contatti" class="inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-800 font-semibold text-sm transition-colors">Richiedi Demo <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl overflow-hidden border border-slate-100 card-hover group shadow-sm">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Sito web per salone di bellezza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+              <span class="absolute bottom-4 left-4 bg-pink-500 text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-lg">Bellezza</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Saloni &amp; Barbieri</h3>
+              <p class="text-slate-500 text-sm leading-relaxed mb-5">Gallery dei lavori, listino prezzi, sistema di prenotazione. I clienti prenotano direttamente dal telefono.</p>
+              <ul class="space-y-2 mb-7">
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Gallery portfolio lavori</li>
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Prenotazione appuntamenti</li>
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Listino prezzi digitale</li>
+              </ul>
+              <a href="#contatti" class="inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-800 font-semibold text-sm transition-colors">Richiedi Demo <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl overflow-hidden border border-slate-100 card-hover group shadow-sm">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Sito web per artigiani e professionisti" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+              <span class="absolute bottom-4 left-4 bg-blue-500 text-white text-xs font-bold uppercase tracking-wide px-3 py-1.5 rounded-lg">Professionisti</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-slate-900 mb-2">Artigiani &amp; Professionisti</h3>
+              <p class="text-slate-500 text-sm leading-relaxed mb-5">Mostra i tuoi lavori, raccogli richieste di preventivo e costruisci credibilità online.</p>
+              <ul class="space-y-2 mb-7">
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Portfolio lavori eseguiti</li>
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Modulo richiesta preventivo</li>
+                <li class="flex items-center gap-2.5 text-sm text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Recensioni e testimonianze</li>
+              </ul>
+              <a href="#contatti" class="inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-800 font-semibold text-sm transition-colors">Richiedi Demo <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         4. PREZZI
+    ════════════════════════════════════════ -->
+    <section id="prezzi" class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16">
+          <span class="inline-block bg-indigo-50 text-indigo-600 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">Prezzi</span>
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Investimento Chiaro, Nessuna Sorpresa</h2>
+          <p class="text-slate-500 text-lg max-w-xl mx-auto">Prezzi fissi, trasparenti. Paghi una volta sola e il sito è tuo per sempre.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto items-stretch">
+
+          <!-- Vetrina Veloce -->
+          <div class="card-hover bg-slate-50 rounded-2xl p-8 border border-slate-200 flex flex-col">
+            <div>
+              <h3 class="text-xl font-bold text-slate-900 mb-1">Vetrina Veloce</h3>
+              <p class="text-slate-500 text-sm mb-6">Smetti di perdere clienti perché non ti trovano online. Un biglietto da visita digitale perfetto: paghi una volta sola ed è tuo per sempre.</p>
+              <div class="flex items-end gap-1 mb-2">
+                <span class="text-5xl font-black text-slate-900">€299</span>
+              </div>
+              <p class="text-slate-400 text-xs mb-7">Una tantum · Nessun canone mensile</p>
+              <ul class="space-y-3 mb-8 text-sm">
+                <li class="flex items-start gap-2.5 text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Sito Web a Pagina Singola (Landing Page)</li>
+                <li class="flex items-start gap-2.5 text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Super Veloce e Mobile-First</li>
+                <li class="flex items-start gap-2.5 text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Pulsante "Chatta su WhatsApp"</li>
+                <li class="flex items-start gap-2.5 text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Mappa e Orari integrati</li>
+                <li class="flex items-start gap-2.5 text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Consegna Rapida (48/72 ore)</li>
+                <li class="flex items-start gap-2.5 text-slate-700"><svg class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Zero Manutenzione</li>
+              </ul>
+            </div>
+            <a href="#contatti" class="mt-auto block text-center px-6 py-3 bg-white border-2 border-slate-200 hover:border-indigo-400 hover:text-indigo-700 text-slate-900 font-semibold rounded-xl transition-all">Richiedi Ora</a>
+          </div>
+
+          <!-- Presenza Completa (featured) -->
+          <div class="pricing-featured bg-indigo-600 rounded-2xl p-8 border border-indigo-500 relative shadow-2xl shadow-indigo-500/40 flex flex-col">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
+              <span class="bg-amber-400 text-amber-900 text-xs font-black uppercase tracking-widest px-3.5 py-1.5 rounded-full shadow-lg">Più Scelto</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-1">Presenza Completa</h3>
+              <p class="text-indigo-300 text-sm mb-6">Fatti percepire come il leader del tuo settore a livello locale. Un sito completo che lavora per te h24, senza i costi spropositati delle agenzie tradizionali.</p>
+              <div class="flex items-end gap-1 mb-2">
+                <span class="text-5xl font-black text-white">€449</span>
+              </div>
+              <p class="text-indigo-300 text-xs mb-7">Una tantum · Nessun canone mensile</p>
+              <ul class="space-y-3 mb-8 text-sm">
+                <li class="flex items-start gap-2.5 text-indigo-100"><svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Sito Web Multi-Pagina (fino a 4 pagine)</li>
+                <li class="flex items-start gap-2.5 text-indigo-100"><svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Modulo Richiesta Preventivo</li>
+                <li class="flex items-start gap-2.5 text-indigo-100"><svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Galleria Lavori Avanzata</li>
+                <li class="flex items-start gap-2.5 text-indigo-100"><svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Ottimizzazione SEO Base locale</li>
+                <li class="flex items-start gap-2.5 text-indigo-100"><svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Integrazione Social</li>
+                <li class="flex items-start gap-2.5 text-indigo-100"><svg class="w-4 h-4 text-indigo-300 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Proprietà al 100%</li>
+              </ul>
+            </div>
+            <a href="#contatti" class="mt-auto block text-center px-6 py-3 bg-white hover:bg-indigo-50 text-indigo-700 font-bold rounded-xl transition-all shadow-lg">Richiedi Ora</a>
+          </div>
+
+        </div>
+
+        <!-- Transparency box -->
+        <div class="max-w-3xl mx-auto mt-10 bg-slate-50 border border-slate-200 rounded-2xl p-6 flex gap-4">
+          <div class="flex-shrink-0 mt-0.5">
+            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20A10 10 0 0012 2z"/></svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-slate-900 mb-1">E i costi di mantenimento?</p>
+            <p class="text-sm text-slate-500 leading-relaxed">Il mio lavoro lo paghi una volta sola. L'unico costo che avrai sarà quello vivo dello spazio web e del nome a dominio. Parliamo di circa 30–40€ all'anno, pagati direttamente al provider. Il sito è e rimarrà sempre di tua proprietà.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════
+         5. CONTATTI
+    ════════════════════════════════════════ -->
+    <section id="contatti" class="py-24 bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+          <div>
+            <span class="inline-block bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6">Contatti</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Parliamo del Tuo Progetto</h2>
+            <p class="text-slate-400 text-lg leading-relaxed mb-10">Compila il modulo o scrivici direttamente. Risponderemo entro 24 ore con un preventivo su misura. Nessun impegno.</p>
+
+            <div class="space-y-5">
+              <div class="flex items-center gap-4">
+                <div class="w-11 h-11 bg-indigo-500/10 border border-indigo-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                </div>
+                <div>
+                  <p class="text-slate-500 text-xs font-medium uppercase tracking-wider mb-0.5">Email</p>
+                  <a href="mailto:taglylab@gmail.com" class="text-white font-semibold hover:text-indigo-400 transition-colors">taglylab@gmail.com</a>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-11 h-11 bg-indigo-500/10 border border-indigo-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <p class="text-slate-500 text-xs font-medium uppercase tracking-wider mb-0.5">Risposta entro</p>
+                  <p class="text-white font-semibold">24 ore lavorative</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-11 h-11 bg-indigo-500/10 border border-indigo-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                </div>
+                <div>
+                  <p class="text-slate-500 text-xs font-medium uppercase tracking-wider mb-0.5">Dove operiamo</p>
+                  <p class="text-white font-semibold">Tutta Italia, da remoto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" novalidate class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8">
+            <div class="grid sm:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label for="nome" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Nome *</label>
+                <input type="text" id="nome" name="nome" required placeholder="Mario Rossi"
+                       class="w-full bg-white/5 border border-white/10 text-white placeholder-slate-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors">
+              </div>
+              <div>
+                <label for="email" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="mario@esempio.it"
+                       class="w-full bg-white/5 border border-white/10 text-white placeholder-slate-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors">
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-5 mb-5">
+              <div>
+                <label for="telefono" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Telefono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+39 333 000 0000"
+                       class="w-full bg-white/5 border border-white/10 text-white placeholder-slate-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors">
+              </div>
+              <div>
+                <label for="tipo-attivita" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Tipo di Attività</label>
+                <select id="tipo-attivita" name="tipo-attivita"
+                        class="w-full bg-slate-800 border border-white/10 text-slate-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors">
+                  <option value="">Seleziona...</option>
+                  <option value="ristorante">Ristorante / Pizzeria</option>
+                  <option value="salone">Salone / Barbiere</option>
+                  <option value="artigiano">Artigiano / Tecnico</option>
+                  <option value="negozio">Negozio</option>
+                  <option value="altro">Altro</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label for="messaggio" class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Messaggio</label>
+              <textarea id="messaggio" name="messaggio" rows="4" placeholder="Parlaci della tua attività e di cosa cerchi..."
+                        class="w-full bg-white/5 border border-white/10 text-white placeholder-slate-600 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors resize-none"></textarea>
+            </div>
+            <button type="submit" id="submit-btn" class="w-full px-6 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 flex items-center justify-center gap-2">
+              Invia Richiesta
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+            <p class="text-slate-600 text-xs text-center mt-4">Risponderemo entro 24 ore. Nessuno spam, promesso.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════ -->
+  <footer class="bg-slate-950 border-t border-slate-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+
+        <div class="sm:col-span-2">
+          <a href="#" class="inline-flex items-center gap-2.5 mb-4">
+            <img src="img/logo.png" alt="TaglyLab" class="h-7 w-auto" onerror="this.style.display='none'">
+            <span class="text-white font-black text-xl tracking-tight">Tagly<span class="text-indigo-400">Lab</span></span>
+          </a>
+          <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Siti web veloci per attività locali. Pronti in pochi giorni, ottimizzati per farti trovare dai clienti della tua zona.</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-5">Navigazione</h4>
+          <ul class="space-y-3">
+            <li><a href="#come-funziona" class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Come Funziona</a></li>
+            <li><a href="#servizi"       class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Servizi</a></li>
+            <li><a href="#prezzi"        class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Prezzi</a></li>
+            <li><a href="#contatti"      class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Contatti</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-5">Legale</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Cookie Policy</a></li>
+            <li><a href="#" class="text-slate-500 hover:text-slate-300 text-sm transition-colors">Termini di Servizio</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-slate-600 text-sm">© 2025 TaglyLab. Tutti i diritti riservati. P.IVA 12345678901</p>
+        <p class="text-slate-600 text-sm">Fatto con ♥ in Italia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
